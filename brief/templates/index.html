@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container-fluid" style="background-image: url('../static/images/entete.jpg'); height: 400px;   background-repeat: no-repeat;
+    background-attachment: fixed; filter: grayscale(80%);">
+        <div class="container">
+            <div class="espace"></div>
+            <h1 class='entete_titre'>{% block title %} Qui sommes nous ? {% endblock %}</h1>
+            <p class="entete" >Créé en 1887, l’Institut Pasteur est un institut international de recherche et d’enseignement, basé en France, au cœur des progrès futurs de la science, 
+                de la médecine et de la santé publique. Fondation à but non lucratif reconnue d’utilité publique, l’Institut Pasteur accomplit quatre grandes missions d’intérêt général : 
+                la recherche, l’enseignement, la santé des populations et des personnes, le développement de l’innovation et le transfert de technologies.</p>
+            
+        </div>
+    </div>
+
+        <div class="container-fluid"style="padding:0px; background-color:#d3d3d38a;">
+            <div class="espace"></div>
+            <h2>La recherche au coeur de nos missions</h2>
+            <div class="espace"></div>
+            <div class="container" style="background-color:#2d96fa; padding:10px;  ">
+                <div class="row">
+                    <div class="col">
+                        <img src='../static/images/bloc_la_recherche.jpg' style="height: 500px; width: 500px;  filter: grayscale(80%);">
+                    </div>
+                    <div class="col">
+                        <h3>L’Institut Pasteur est un centre de recherche biomédicale international</h3>
+                        <div class="espace"></div>
+                        <p style='text-align: justify;'>La recherche pasteurienne décrypte les mécanismes fondamentaux à la base du vivant,
+                         fait progresser la connaissance scientifique et conduit à des applications médicales de pointe. </p>
+                        <ul>
+                            <li>Des recherches menées à tous les niveaux du vivant</li>
+                            <li>La mise en œuvre d’approches pluridisciplinaires</li>
+                            <li>Un plateau technologique unique</li>
+                            <li>Un réseau international de 32 instituts, sur les cinq continents</li>
+                        </ul>
+                    </div>
+                
+                <div>
+                    
+            </div>
+        </div>
+          
+    </div>
+    </div>
+        <div class="container-fluid" style="padding:0px;">
+            <div class="espace"></div>
+            <h2 >Les besoins de dons</h2>
+            <div class="espace"></div>
+            <div class="container" style="background-color:#2d96fa; padding:10px;">
+                <div class="row">
+                    <div class="col">
+                        
+                        <h3>Les dons font avancer la recherche</h3>
+                        <div class="espace"></div>
+                        <p style='text-align: justify;'>Avec les fonds récoltés, nous comptons investir pour un essayer
+                            de creer un monde meilleur. Afin de combattre les maladies faisant plusieurs millions de morts
+                            dans le monde chaque année, nous avons besoin de  : </p>
+                        <ul>
+                            <li>Materiel neuf</li>
+                            <li>Locaux</li>
+                            <li>Personnel compétent</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <img src='../static/images/vaccin.jpg' style="height: 500px; width: 500px;  filter: grayscale(80%);">
+                    </div>
+                
+                <div>
+                    
+            </div>
+        </div>
+          
+    </div>
+    
+        
+    </div>
+    <div class="container" style="padding:0px;">
+        <div class="espace"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="{{url_for('don')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Faire un don</a>
+                </div>
+                <div class="col text-center">
+                    <a href="{{url_for('don')}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Voir les dons</a>
+                </div>
+            
+            <div>
+                
+        </div>
+    </div>
+</div></div>
+      
+    <div class="espace"></div>
+
+    <div class="container-fluid"style="padding:0px; background-color:#d3d3d38a;">
+        <div class="espace"></div>
+        <h2>La recherche au coeur de nos missions</h2>
+        <div class="espace"></div>
+        <div class="container" style="background-color:#2d96fa; padding:10px;  ">
+            <div class="row">
+                <div class="col">
+                    <iframe style="background: #FFFFFF;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" 
+                    width="500" height="500" 
+                    src="https://charts.mongodb.com/charts-kata-juitp/embed/charts?id=b65f9bf0-5bea-4e75-a028-2ca6d9330bc0&autoRefresh=1800&theme=light">
+                </iframe>
+                    
+                </div>
+                <div class="col">
+                    <h3>L’Institut Pasteur est un centre de recherche biomédicale international</h3>
+                    <div class="espace"></div>
+                    <p style='text-align: justify;'>La recherche pasteurienne décrypte les mécanismes fondamentaux à la base du vivant,
+                     fait progresser la connaissance scientifique et conduit à des applications médicales de pointe. </p>
+                    <ul>
+                        <li>Des recherches menées à tous les niveaux du vivant</li>
+                        <li>La mise en œuvre d’approches pluridisciplinaires</li>
+                        <li>Un plateau technologique unique</li>
+                        <li>Un réseau international de 32 instituts, sur les cinq continents</li>
+                    </ul>
+                </div>
+            
+            <div>
+                
+        </div>
+    </div>
+
+</div>
+<div class="espace"></div>
+</div>
+
+    <div class="espace"></div>
+
+
+
+
+
+
+{% endblock %}

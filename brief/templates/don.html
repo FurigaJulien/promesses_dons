@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1>{% block title %} Faire un don {% endblock %}</h1>
+    <form method="POST">
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputName">Nom</label>
+            <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Nom" required value="{{ request.form['inputName'] }}">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="inputPrenom">Prénom</label>
+            <input type="text" class="form-control" id="inputPrenom" name="inputPrenom" placeholder="Prénom" required value="{{ request.form['inputPrenom'] }}">
+        </div>
+        <div class="form-group col">
+            <label for="inputAddressMail">Addresse mail</label>
+            <input type="email" class="form-control" id="inputAddressMail" placeholder="jean.dupont@wanadoo.fr" required  name="inputAddressMail"value="{{ request.form['inputAddressMail'] }}">
+            </div>
+        </div>
+        <div class="form-group">
+        <label for="inputAddress">Addresse</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="7 rue des oranges" required name="inputAddress"value="{{ request.form['inputAddress'] }}">
+        </div>
+        <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="inputCity">Ville</label>
+            <input type="text" class="form-control" id="inputCity" required name="inputCity"value="{{ request.form['inputCity'] }}">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="inputState">Pays</label>
+            <select id="inputState" class="form-control" required name="inputState"value="{{ request.form['inputState'] }}"></input>
+            <option>France</option>
+            <option>Belgique</option>
+            <option>Suisse</option>
+            <option>Luxembourg</option>
+            </select>
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputZip">Code Postal</label>
+            <input type="text" class="form-control" id="inputZip" required name="inputZip"value="{{ request.form['inputZip'] }}">
+        </div>
+        <div class="form-group col-md-2">
+            <label for="inputMontant">Montant du don</label>
+            <input type="number" class="form-control" id="inputMontant" required name="inputMontant"value="{{ request.form['inputMontant'] }}">
+        </div>
+        </div>
+        
+        <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" required>
+            <label class="form-check-label" for="gridCheck">
+                J'accepte les <a href="#">conditions générales</a> de dons
+            </label>
+        </div>
+        
+        </div>
+        <button type="submit" class="btn btn-primary">Donner</button>
+    </form>
+</div>
+{% endblock %}

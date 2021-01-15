@@ -1,0 +1,44 @@
+.entete{
+    color: white;
+    text-align: justify;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family:  "Playfair Display";
+}
+.entete_titre{
+    margin-top: 50px;
+    color: white;
+    margin: auto;
+    font-family:  "Playfair Display";
+}
+h2{
+    text-align: center;
+    margin: auto;
+    font-family:  "Playfair Display";
+}
+.espace{
+    height: 50px;
+}
+li{
+    margin-top: 20px;
+    font-family:  "Playfair Display";
+}
+.white{
+    background-color: white;
+    font-family:  "Playfair Display";
+}
+h3{
+    color: white;
+    font-family:  "Playfair Display";
+}
+p{
+    color: white;
+    font-family:  "Playfair Display";
+}
+li{
+    color: white; 
+    font-family:  "Playfair Display";
+}
+body{
+    
+}
